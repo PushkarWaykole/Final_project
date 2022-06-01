@@ -33,9 +33,13 @@ const Login = () => {
 		<div className={styles.login_container}>
 			<div className={styles.login_form_container}>
 				<div className={styles.left}>
+					<div className={styles.head}>Typing Utiles</div>
+					
 					<form className={styles.form_container} onSubmit={handleSubmit}>
 						<h1>Login to Your Account</h1>
+
 						<input
+						style={{width:"368px",fontSize:"15px",height:"50px"}}
 							type="email"
 							placeholder="Email"
 							name="email"
@@ -45,6 +49,7 @@ const Login = () => {
 							className={styles.input}
 						/>
 						<input
+						style={{width:"368px",fontSize:"15px",height:"50px"}}
 							type="password"
 							placeholder="Password"
 							name="password"
