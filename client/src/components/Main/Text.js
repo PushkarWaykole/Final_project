@@ -48,7 +48,7 @@ const Text = (props) => {
         props.showAlert("Removed spaces  successfully","success")
       }
   return (
-    <div>
+    <div id="unsplash">
         <h2 style={{textAlign: "center"}} className="head">This is a text analyzer</h2>
         <textarea autocomplete="on" style={{width: "100%",textAlign: "center",height: "40%",margin:"20px 0",fontSize: "40px"}}className="form-control" placeholder="Type or paste your content here" cursor="text" value={text} onChange={handleOnChange} id="myBox" rows="2"></textarea >
         

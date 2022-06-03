@@ -110,6 +110,16 @@ p {
 .heading{
   font-family: 'Spline Sans Mono', monospace;
   text-align: center;
+  background: white;
+  padding: 10px;
+  color: rgb(8, 8, 8);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff;
+    
+    font-weight: 900;
+    font-size: 30px;
 }
 
 
@@ -133,9 +143,10 @@ p {
 
 .start{
   font-family: 'Spline Sans Mono', monospace;
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 40px;
   text-align:center;
+  color:white;
   
   
 }
@@ -143,6 +154,7 @@ p {
   font-size: 30px;
   margin-left: 30px;
   font-weight: 700;
+  color:white;
 }
 .wrapper {
   /* height: 100vh; */
@@ -158,7 +170,7 @@ p {
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
-  font-size: 2em;
+  font-size: 50px;
 }
 
 @keyframes typing {
@@ -175,11 +187,23 @@ p {
 
 input[type="text"]
 {
-font-size:50px;
-color:rgb(20, 141, 255);
-width:20px;
+font-size:40px;
+text-align: center;
+color:rgb(0, 0, 0);
+
+width:67%;
+font-weight: 800;
 }
 
+.input-field
+{
+width:70%;
+font-size:20px;
+margin:auto auto;
+display:flex;
+justify-content:center;
+align-items:center;
+}
 input{
   height:100px;
 }

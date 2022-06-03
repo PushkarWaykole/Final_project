@@ -2,17 +2,13 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Typing.css";
 
 import Feedback from "./Feedback"
-////////////////////////////////https://www.youtube.com/watch?v=Hpf2OmYnqhw
-const getCloud = () => `The Yellow Wallpaper by Charlotte Perkins Gilman explores a woman's descent into madness after she's confined to a room with yellow wallpaper to help her nervous disorder. It is a groundbreaking short story that drew attention to mental health and women's rights when it was released and has influenced many writers, including Alice Walker and Sylvia Plath.`.split(" ");
+
+const getCloud = () => `Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out,Wolf Wolf The wolf is chasing the sheep.`.split(" ");
 
 function Word(props) {
   const { text, active, correct } = props;
 
-  // const rerender = useRef(0);
-
-  // useEffect(() => {
-  //   rerender.current += 1;
-  // });
+  
 
   if (correct === true) {
     return <span className="correct">{text} </span>;
@@ -132,7 +128,7 @@ export default function App() {
       <div className="start">Start typing</div>
       <input
       className="input-field"
-        style={{width: "100%", height: "80px", border: "2px solid black" ,borderRadius: "30px",border:"none"}}
+        style={{ height: "80px", border: "2px solid black" ,borderRadius: "30px",border:"none"}}
         type="text"
         value={userInput}
         placeholder="Type the word"

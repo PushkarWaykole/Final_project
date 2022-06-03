@@ -50,7 +50,7 @@ const Signup = () => {
 					<form className={styles.form_container} onSubmit={handleSubmit}>
 						<h1>Create Account</h1>
 						<input
-						style={{width:"368px",fontSize:"15px",height:"50px"}}
+						style={{width:"368px",textAlign:"left",fontSize:"15px",height:"50px"}}
 							type="text"
 							placeholder="First Name"
 							name="firstName"
@@ -60,7 +60,7 @@ const Signup = () => {
 							className={styles.input}
 						/>
 						<input
-						style={{width:"368px",fontSize:"15px",height:"50px"}}
+						style={{width:"368px",textAlign:"left",fontSize:"15px",height:"50px"}}
 							type="text"
 							placeholder="Last Name"
 							name="lastName"

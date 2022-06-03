@@ -1,8 +1,8 @@
 .signup_container {
 	width: 100%;
-	background: url('https://source.unsplash.com/random/1024 x 768/?abstract');
+	background: url('https://source.unsplash.com/random/1024x768/?computer');
 	min-height: 100vh;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
