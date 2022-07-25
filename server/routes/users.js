@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { User, validate } = require("../models/user");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); //To hash passwords
 
 router.post("/", async (req, res) => {
 	try {
@@ -8,7 +8,7 @@ router.post("/", async (req, res) => {
 		if (error)
 			return res.status(400).send({ message: error.details[0].message });
 
-		const user = await User.findOne({ email: req.body.email });
+		const user = await User.findOne({ email: req.body.email }); //Checks for email validation
 		if (user)
 			return res
 				.status(409)

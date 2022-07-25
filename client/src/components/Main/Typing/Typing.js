@@ -3,12 +3,10 @@ import "./Typing.css";
 
 import Feedback from "./Feedback"
 
-const getCloud = () => `Once, there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself, he sang out,Wolf Wolf The wolf is chasing the sheep.`.split(" ");
+const getCloud = () => `Once there was a boy who became bored when he watched over the village sheep grazing on the hillside. To entertain himself he sang out Wolf Wolf The wolf is chasing the sheep.`.split(" ").sort(()=> Math.random() >0.5 ? 1:-1);
 
 function Word(props) {
   const { text, active, correct } = props;
-
-  
 
   if (correct === true) {
     return <span className="correct">{text} </span>;
@@ -100,8 +98,7 @@ export default function App() {
 
 <div class="wrapper">
     <div class="typing-demo heading">
-      Typing test ............
-    </div>
+      Typing test ........</div>
 </div>
       
       <div className="stats">

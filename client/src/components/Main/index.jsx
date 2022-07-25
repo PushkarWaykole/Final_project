@@ -48,7 +48,7 @@ const Main = () => {
   useEffect(() => {
     if (!vantaEffect) {
       setVantaEffect(
-        RINGS({
+        NET({
           el: vantaRef.current,
           THREE,
           mouseControls: true,
@@ -79,27 +79,11 @@ const Main = () => {
 					Logout
 				</button>
 			</nav>
-      <Alert alert={alert}/>
+      
 	  <Typing />
 
 	  
-	  <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <h1 style={{textAlign: "center"}}>Text tools </h1>
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <Text />
-      </div>
-    </div>
-  </div>
-
-  <Feedback />
-  {/* <Bg /> */}
-</div>
+	  
       
 	
 			

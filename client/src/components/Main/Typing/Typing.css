@@ -113,6 +113,8 @@ p {
   background: white;
   padding: 10px;
   color: rgb(8, 8, 8);
+  border-radius: 10px;
+  margin-top:10px;
   text-shadow:
     0 0 7px #fff,
     0 0 10px #fff,
